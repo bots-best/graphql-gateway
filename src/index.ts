@@ -25,7 +25,7 @@ const gateway = new ApolloGateway({
 });
 
 
-(async function main() {
+(async () => {
 	const { executor, schema } = await gateway.load();
 
 	const app = new Koa();
